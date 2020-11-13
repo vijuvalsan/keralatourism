@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.district
+{
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#distimg{
+    border: 10px solid transparent;
+    color: antiquewhite; 
+    text-decoration: none;
+    padding-left: 20px;
+} 
+
+.footer {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.521);
+   
+  }
+
+
+  .bg1{
+
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+
+  }
+
+  .bg2{
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(2px);
+  }
+
+
+  .CityName{
+    color: black
+    font-weight: bold;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    width: 34%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+
+  }
+
+
+
+  .description{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.274); 
+  }
+
+
+
+  
+.init{
+    position: absolute;
+    height: 400px; 
+    transform: translate(0%, -100%);
+    height: 100%; 
+    width: 100%;
+    padding-top: 8%;
+  }
+  
+  #popular{
+    padding-top: 4%;
+    text-align: center;
+ 
+  }
+  
+  
+  .carouselSett{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+
+  }
+  
+  
