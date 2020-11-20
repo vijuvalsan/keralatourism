@@ -42,12 +42,15 @@
  <!--login-->
  <div id="login-box" style="background: transparent; margin-top: 10%;">
     <div class="left">
+      <form action="#"  onsubmit="return ValidatePassword();" >
       <h1>Login</h1>
       <br>
 
-      <input type="text" name="email" placeholder="E-mail" />
-      <input type="password" name="password" placeholder="Password" />
-      <input type="submit" name="signup_submit" value="login" />
+      <input id="email" type="text" name="email" placeholder="Email/PhoneNo"  />
+      <div id="msg" style="font-size: 15px;  margin-top: -10px; margin-bottom: 10px;"> </div>
+      <input id="pass" type="password" name="password" placeholder="Password" />
+      <div id="msg1" style="font-size: 15px;  margin-top: -10px; margin-bottom: 10px;"> </div>
+      <input id="submit" type="submit" name="signup_submit" value="login" onclick="return ValidateEmailPhone(); "  />
     </div>
     
     <div class="right">
@@ -57,6 +60,7 @@
       <button class="social-signin twitter">Log in with Twitter</button>
       <button class="social-signin google">Log in with Google+</button>
     </div>
+  </form>
     <div class="or">OR</div>
   </div>
 
@@ -67,7 +71,7 @@
   </div>
   <!--/footer-->
 
-
+  <script src="./form.js"></script>
 
 
 </body>

@@ -42,15 +42,20 @@
  <!--signip-->
  <div id="login-box" style="background: transparent; margin-top: 10%;">
     <div class="left">
+      <form action="#"  onsubmit="return ValidatePassword();" >
       <h1>Sign up</h1>
       <br>
       
-      <input type="text" name="username" placeholder="Username" />
-      <input type="text" name="email" placeholder="E-mail" />
-      <input type="password" name="password" placeholder="Password" />
-      <input type="password" name="password2" placeholder="Retype password" />
+      <input type="text" name="username" placeholder="Username" required />
       
-      <input type="submit" name="signup_submit" value="Sign me up" />
+      <input id="email" type="text" name="email" placeholder="Email/Phone no"  />
+      <div id="msg" style="font-size: 15px;  margin-top: -10px; margin-bottom: 10px;"> </div>
+      <input id="pass" type="password" name="password" placeholder="Password" />
+      <div id="msg1" style="font-size: 15px;  margin-top: -10px; margin-bottom: 10px;"> </div>
+      <input id="pass" type="password" name="password2" placeholder="Retype password" />
+      <div id="msg1" style="font-size: 15px;  margin-top: -10px; margin-bottom: 10px;"> </div>
+      
+      <input id="submit" type="submit" name="signup_submit" value="Sign me up" onclick="return ValidateEmailPhone(); "/>
     </div>
     
     <div class="right">
@@ -60,6 +65,8 @@
       <button class="social-signin twitter">Log in with Twitter</button>
       <button class="social-signin google">Log in with Google+</button>
     </div>
+  </form>
+
     <div class="or">OR</div>
   </div>
 
@@ -70,7 +77,7 @@
   </div>
   <!--/footer-->
 
-
+  <script src="./form.js"></script>
 
 
 </body>
